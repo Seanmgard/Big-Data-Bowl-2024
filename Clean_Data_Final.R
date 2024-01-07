@@ -251,7 +251,7 @@ DLine_Player_Table <- as.tibble(Tackle_Calcs) |>
   slice(1:10) |> 
   gt() |> 
   tab_header(
-    title = md("**Average Tackles Over Expected**"),
+    title = md("**Gridiron Tackle Superiority (GTS)**"),
     subtitle = md("*2022 Season | Over 50 Snaps Played")) |> 
   tab_stubhead(label = "Name") |> 
   gt_img_rows(headshot_url, height = 25) |> 
@@ -260,7 +260,7 @@ DLine_Player_Table <- as.tibble(Tackle_Calcs) |>
     displayName.x = "Name",
     team = "Team",
     position = "Position",
-    Tackles_Over_Expected = "Tackles Over Expected",
+    Tackles_Over_Expected = "--GTS--",
     headshot_url = "") |> 
   cols_align(align = "center")
 DLine_Player_Table
@@ -273,7 +273,7 @@ Secondary_Player_Table <- as.tibble(Tackle_Calcs) |>
   slice(1:10) |> 
   gt() |> 
   tab_header(
-    title = md("**Average Tackles Over Expected**"),
+    title = md("**Gridiron Tackle Superiority (GTS)**"),
     subtitle = md("*2022 Season | Over 50 Snaps Played")) |> 
   tab_stubhead(label = "Name") |> 
   gt_img_rows(headshot_url, height = 25) |> 
@@ -282,7 +282,7 @@ Secondary_Player_Table <- as.tibble(Tackle_Calcs) |>
     displayName.x = "Name",
     team = "Team",
     position = "Position",
-    Tackles_Over_Expected = "Tackles Over Expected",
+    Tackles_Over_Expected = "--GTS--",
     headshot_url = "") |> 
   cols_align(align = "center")
 Secondary_Player_Table
@@ -296,7 +296,7 @@ Linebacker_Player_Table <- as.tibble(Tackle_Calcs) |>
   slice(1:10) |> 
   gt() |> 
   tab_header(
-    title = md("**Average Tackles Over Expected**"),
+    title = md("**Gridiron Tackle Superiority (GTS)**"),
     subtitle = md("*2022 Season | Over 50 Snaps Played")) |> 
   tab_stubhead(label = "Name") |> 
   gt_img_rows(headshot_url, height = 25) |> 
@@ -305,7 +305,7 @@ Linebacker_Player_Table <- as.tibble(Tackle_Calcs) |>
     displayName.x = "Name",
     team = "Team",
     position = "Position",
-    Tackles_Over_Expected = "Tackles Over Expected",
+    Tackles_Over_Expected = "--GTS--",
     headshot_url = "") |> 
   cols_align(align = "center")
 Linebacker_Player_Table
