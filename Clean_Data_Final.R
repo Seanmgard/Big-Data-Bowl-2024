@@ -316,15 +316,4 @@ Linebacker_Player_Table
 #Save RData file for easy load later
 save.image(file = "Big_Data_Bowl.RData")
 
-# Play around with stuff ---------------------------------------------
 
-Test <- Primary_Step3 |> 
-  filter(gameId == "2022091102", playId == "1107")
-
-
-LB_Test <- Tackle_Calcs |> 
-  filter(position %in% linebackers) |> 
-  distinct()
-
-
-Test_Colors <- load_teams()
